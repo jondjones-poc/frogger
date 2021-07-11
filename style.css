@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+:root {
+    --primary: #000;
+    --background: #daffde;
+}
+
+body {
+    font-family: 'Roboto',sans-serif;
+    background-color: var(--background);
+    color: var(--primary);
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.grid {
+    border: 1px solid var(--primary);
+    display: flex;
+    flex-wrap: wrap;
+    height: 720px;
+    width: 720px;
+    background-color: lightgreen;
+}
+
+.grid div {
+    height: 80px;
+    width: 80px;
+}
+
+.starting-block {
+    background-color: blue;
+}
+
+.ending-block {
+    background-image: url('./house.png');
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.c1 {
+    background-image: url('./car.png');
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.c2, .c3 {
+    background-image: url('./road.png');
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.l1, .l2, .l3, .lf2, .lf3 {
+    background-image: url('./log.png');
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.l4, .l5 {
+    background-image: url('./sea.png');
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.frog {
+    background-image: url('./frog.png');
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.btn {
+    box-shadow: 0px 10px 14px -7px #3e7327;
+	background:linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
+	background-color:#77b55a;
+	border-radius:4px;
+	border:1px solid #4b8f29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size: 2rem;
+	font-weight:bold;
+	padding: 12px 18px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #5b8a3c;
+}
+
+#result {
+    font-size: 2rem;
+    position: absolute;
+    z-index: 5;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.7)
+}
+
+.hidden {
+    display: none;
+}
+
+.won {
+    color: green;
+}
+
+.lost {
+    color: red;
+}
